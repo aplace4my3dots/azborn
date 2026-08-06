@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZBORN — E-RUN MAGAZINE | Futuristic Fashion & Photography</title>
+  <meta name="description" content="E-RUN Magazine by AZBORN — 32 covers of speculative fashion: ferrofluid velvet, gothic wheelchair masks, bioluminescent couture, cryo architecture & daily AI concepts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo" aria-label="AZBORN home">
+        <h1>E-RUN</h1>
+        <small class="mono">MAGAZINE · AZBORN GROUP</small>
+      </a>
+      <div class="nav-links">
+        <a href="#gallery" class="hide-m">Gallery</a>
+        <a href="#playbooks" class="hide-m">Playbooks</a>
+        <a href="#daily" class="hide-m">Daily Concept</a>
+        <a href="https://github.com/aplace4my3dots/azborn" target="_blank" rel="noopener" class="hide-m mono" style="border:1px solid var(--line); padding:7px 10px; border-radius:999px;">GitHub →</a>
+        <a href="#gallery" class="cta">Explore Issues</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker mono">AZBORN · EST. 2026 · FALKENSTEIN — TEHRAN — ORBITAL</div>
+          <h2>FUTURISTIC<br> FASHION &<br> <span>PHOTOGRAPHY</span></h2>
+          <p>
+            <strong style="color:var(--text)">E-RUN Magazine</strong> is a digital-first editorial system engineering haute couture from speculative physics — ferrofluid spikes, acoustic levitation, aerogel silk, cryo ice & inclusive gothic luxury. 
+            Every cover is a production prompt + Instagram caption kit. This is the live archive.
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn primary">Browse 32 Covers →</a>
+            <button class="btn ghost" id="randomBtn">🎲 Surprise Me</button>
+            <a href="#playbooks" class="btn">Read Playbooks</a>
+          </div>
+          <div class="stats">
+            <span><strong>32</strong> covers</span>
+            <span>·</span>
+            <span><strong>14</strong> editorial collections</span>
+            <span>·</span>
+            <span><strong>daily</strong> auto-generator</span>
+            <span class="mono" style="margin-left:auto; background:var(--accent); color:#000; padding:5px 9px; border-radius:999px; font-weight:700">LIVE PREVIEW</span>
+          </div>
+        </div>
+        <div class="hero-card" id="heroCard" style="cursor:pointer" title="Open latest: Ferrofluid Obsidian Velvet">
+          <img id="heroImg" src="images/erun_issue_ferrofluid_obsidian_velvet_3x4.jpg" alt="Ferrofluid Obsidian Velvet cover" loading="eager" />
+          <div class="overlay"></div>
+          <div class="meta">
+            <div>
+              <div class="badge mono">Latest · 2026-08-06 · Issue 34</div>
+              <h3 style="color:white; font-family:Bebas Neue; letter-spacing:.04em; font-size:22px; font-weight:400">FERROFLUID MAGNETIC<br>SCULPTURE & OBSIDIAN VELVET</div>
+            </h3>
+            <div class="mono" style="color:rgba(255,255,255,.8); font-size:10px">Click → lightbox</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER -->
+  <div class="filter-wrap">
+    <div class="container">
+      <div class="filter" id="filterBar">
+        <!-- pills injected -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <main class="container">
+    <div class="stats" style="padding: 10px 0 0; color:var(--muted)">
+      <span id="countLabel">Showing 32 issues</span>
+      <span style="margin-left:auto; font-size:12px" class="mono">Tip: Press <strong style="color:var(--text)">/</strong> to search · <strong style="color:var(--text)">← →</strong> in lightbox</span>
+    </div>
+    <div id="grid" class="grid"></div>
+
+    <section id="playbooks" class="section">
+      <h3>EDITORIAL SYSTEM</h3>
+      <p>Four playbooks · Prompt library · Growth strategy · Automation. Everything is versioned in Git.</p>
+      <div style="display:grid; grid-template-columns:repeat(12,1fr); gap:12px; margin-top:16px">
+        <a href="E-RUN_MAGAZINE_MASTER_PLAYBOOK.md" target="_blank" class="card" style="grid-column: span 6; padding:16px; display:block; text-decoration:none">
+          <div class="mono" style="color:var(--accent)">MASTER PLAYBOOK · 329 LINES</div>
+          <h4 style="margin:8px 0 6px; font-size:16px">14 Collections — Prompts + Captions</h4>
+          <p style="margin:0; color:var(--muted); line-height:1.5; font-size:13px">Every cover systematized with Midjourney v6.1 / Flux prompt formula + Hook→Story→CTA→Hashtags caption suite. Deep-sea, cyborg, helium, ice, gothic, kintsugi & more.</p>
+          <div class="mono" style="margin-top:10px; color:var(--text)">Open →</div>
+        </a>
+        <a href="NEW_CREATIVE_CONCEPTS_AND_DAILY_AUTOMATION.md" target="_blank" class="card" style="grid-column: span 3; padding:16px; display:block">
+          <div class="mono" style="color:var(--accent)">NEW CONCEPTS</div>
+          <h4 style="margin:8px 0 6px">Daily Automation</h4>
+          <p style="margin:0; color:var(--muted); font-size:13px">Mercury levitation, silkmoth aerogel, tesla coils + generator script.</p>
+          <div class="mono" style="margin-top:10px">Open →</div>
+        </a>
+        <a href="AUDIENCE_GROWTH_PLAYBOOK.md" target="_blank" class="card" style="grid-column: span 3; padding:16px; display:block">
+          <div class="mono" style="color:var(--accent)">GROWTH</div>
+          <h4 style="margin:8px 0 6px">0→100k Playbook</h4>
+          <p style="margin:0; color:var(--muted); font-size:13px">4 pillars, frameworks, carousel strategy, SEO.</p>
+          <div class="mono" style="margin-top:10px">Open →</div>
+        </a>
+        <a href="LAUNCH_CAMPAIGN_GRID_AND_CAPTIONS.md" target="_blank" class="card" style="grid-column: span 12; padding:16px; display:flex; gap:16px; align-items:center">
+          <img src="images/erun_issue_kintsugi_swans.jpg" style="width:92px; aspect-ratio:3/4; object-fit:cover; border-radius:12px; border:1px solid var(--line)" alt="" />
+          <div>
+            <div class="mono" style="color:var(--accent)">LAUNCH GRID · 9 POSTS READY</div>
+            <h4 style="margin:6px 0 4px">9-Grid Launch Campaign</h4>
+            <p style="margin:0; color:var(--muted); font-size:13px">Rotating Cyber-Elegance / Bio-Futurism / Surreal Luxury with exact prompt formulas for Midjourney/Flux.</p>
+          </div>
+          <div class="mono" style="margin-left:auto">Open →</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="daily" class="section">
+      <h3>DAILY CONCEPT ENGINE</h3>
+      <p>Automated via <code>scripts/generate_daily_concept.py</code> — rotates physics + biomaterial matrix. Today is <strong style="color:var(--text)">Ferrofluid Obsidian Velvet</strong>. Tomorrow: Chronolithic Amber.</p>
+      <div class="card" style="grid-column: span 12; padding:16px; margin-top:14px; cursor:default; display:grid; grid-template-columns: 180px 1fr; gap:16px; align-items:start">
+        <img src="images/erun_issue_ferrofluid_obsidian_velvet_3x4.jpg" style="width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:12px; border:1px solid var(--line)" alt="" />
+        <div>
+          <div class="mono" style="color:var(--accent)">scripts/generate_daily_concept.py · captions/2026-08-06.json</div>
+          <h4 style="margin:8px 0">How to run locally</h4>
+          <pre style="background:#111; border:1px solid #2a2a2a; border-radius:12px; padding:12px; overflow:auto; font-size:12px; line-height:1.5; color:#ddd">python3 scripts/generate_daily_concept.py
+# → prompts + captions/YYYY-MM-DD.json/.txt
+# ask Arena: “generate today’s image” → generate_image tool
+# post: python3 scripts/post_to_instagram.py  # needs INSTAGRAM_ACCESS_TOKEN + INSTAGRAM_ACCOUNT_ID</pre>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px">
+            <a href="captions/2026-08-06.json" target="_blank" class="btn" style="font-size:12px; padding:8px 12px">View JSON</a>
+            <a href="captions/2026-08-06.txt" target="_blank" class="btn" style="font-size:12px; padding:8px 12px">View Caption</a>
+            <a href="scripts/generate_daily_concept.py" target="_blank" class="btn primary" style="font-size:12px; padding:8px 12px">Open Generator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:start; justify-content:space-between">
+        <div class="prose">
+          <div class="mono" style="color:var(--text); font-size:12px; letter-spacing:.12em">AZBORN GROUP · E-RUN MAGAZINE</div>
+          <p style="margin:8px 0 0; line-height:1.6; font-size:13px">Curating post-human aesthetic culture — speculative physics, xenobotany, and inclusive high-fashion. Built in Falkenstein, Saxony · Branch <code>arena/019fd799-azborn</code>. <br> Pipeline: <code>generate_image</code> → <code>captions/</code> → <code>post_to_instagram.py</code> (Meta Graph API) → GitHub Actions cron daily 13:00 UTC.</p>
+          <p style="margin:10px 0 0; font-size:12px" class="mono">© 2026 AZBORN. All covers CC — prompt formulas reusable. Tag <strong style="color:var(--text)">@ERUNMagazine</strong> when you remix.</p>
+        </div>
+        <div class="mono" style="display:flex; gap:10px; flex-wrap:wrap">
+          <a href="#gallery">Gallery</a>
+          <a href="https://github.com/aplace4my3dots/azborn" target="_blank">GitHub</a>
+          <a href="E-RUN_MAGAZINE_MASTER_PLAYBOOK.md" target="_blank">Playbook</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lb" role="dialog" aria-modal="true">
+      <div class="lb-media">
+        <img id="lbImg" src="" alt="" />
+        <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+        <div class="nav-arrows">
+          <button id="lbPrev" aria-label="Previous">‹</button>
+          <button id="lbNext" aria-label="Next">›</button>
+        </div>
+      </div>
+      <div class="lb-body">
+        <div id="lbKicker" class="lb-kicker mono"></div>
+        <h3 id="lbTitle"></h3>
+        <div id="lbMeta" class="meta-row"></div>
+        <p id="lbHook" style="font-weight:600; color:#fff"></p>
+        <p id="lbStory"></p>
+        <p id="lbCTA" style="color:var(--accent); font-weight:600"></p>
+        <div class="sep"></div>
+        <div class="mono" style="color:var(--muted); margin-bottom:6px">Production Prompt — copy to Midjourney v6.1 / Flux.1 Pro</div>
+        <div id="lbPrompt" class="prompt"></div>
+        <div style="margin-top:10px" class="mono" id="lbHashtags" style="color:var(--muted); line-height:1.5; font-size:11px"></div>
+        <div class="lb-actions">
+          <button class="mini primary" id="copyCaption">Copy caption</button>
+          <button class="mini" id="copyPrompt">Copy prompt</button>
+          <a id="dlLink" class="mini" download>Download cover</a>
+          <button class="mini" id="shareBtn">Share</button>
+        </div>
+        <div class="sep"></div>
+        <div class="mono" style="color:var(--muted)">Navigate: ← → keys · Esc to close · Click outside or ×</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
